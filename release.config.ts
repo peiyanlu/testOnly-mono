@@ -11,5 +11,6 @@ export default defineConfig({
   git: {
     requireWorkDirClean: false,
     requireRepository: false,
+    requireRemote: false,
   },
 } satisfies UserConfig)
