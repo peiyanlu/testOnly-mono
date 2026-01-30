@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@peiyanlu/release':
-        specifier: file:E:/@peiyanlu/release/peiyanlu-release-0.0.3.tgz
-        version: file:../@peiyanlu/release/peiyanlu-release-0.0.3.tgz(conventional-commits-filter@5.0.0)
+        specifier: file:E:/@peiyanlu/release/peiyanlu-release-0.0.4.tgz
+        version: file:../@peiyanlu/release/peiyanlu-release-0.0.4.tgz(conventional-commits-filter@5.0.0)
     devDependencies:
       '@types/node':
         specifier: ^25.0.10
@@ -92,13 +92,13 @@ packages:
   '@octokit/types@16.0.0':
     resolution: {integrity: sha512-sKq+9r1Mm4efXW1FCk7hFSeJo4QKreL/tTbR0rz/qx/r1Oa2VV83LTA/H/MuCOX7uCIJmQVRKBcbmWoySjAnSg==}
 
-  '@peiyanlu/cli-utils@0.0.4':
-    resolution: {integrity: sha512-HR3xvUmpZT94DTwmMIeD80preNpFNTkxA61SblnNPxEKl7Kxh3cZD/44dP3CLg7aTFnNmAAyvWGyNjo7F0vqkA==}
+  '@peiyanlu/cli-utils@0.0.5':
+    resolution: {integrity: sha512-nZtD0UibEXJ6HsdCU40NDkJUAV7dH/+CSjqEBryuRpRLFtKT6IAiduJGPTycGuWq5m5JURgyFU3Eyit3dCT0zA==}
     engines: {node: '>=20'}
 
-  '@peiyanlu/release@file:../@peiyanlu/release/peiyanlu-release-0.0.3.tgz':
-    resolution: {integrity: sha512-huxvIQ3OUig2DkNTIqMBcq+BGJoIJc3Mhj1zYGPFn9OAmfIkroOjsUTmAhnS4mGLSo/xpByAHiNKBOiWE/1CIw==, tarball: file:../@peiyanlu/release/peiyanlu-release-0.0.3.tgz}
-    version: 0.0.3
+  '@peiyanlu/release@file:../@peiyanlu/release/peiyanlu-release-0.0.4.tgz':
+    resolution: {integrity: sha512-7SXg+Iz1dqiF4IxHgZ1m1U3KhKmvuP5K3uge5jqnzDMO50SkHzLeOIOULu1gLZdaUZ2ay6OoZtcGscbqd6g1gA==, tarball: file:../@peiyanlu/release/peiyanlu-release-0.0.4.tgz}
+    version: 0.0.4
     engines: {node: '>=20'}
     hasBin: true
 
@@ -436,13 +436,13 @@ snapshots:
     dependencies:
       '@octokit/openapi-types': 27.0.0
 
-  '@peiyanlu/cli-utils@0.0.4': {}
+  '@peiyanlu/cli-utils@0.0.5': {}
 
-  '@peiyanlu/release@file:../@peiyanlu/release/peiyanlu-release-0.0.3.tgz(conventional-commits-filter@5.0.0)':
+  '@peiyanlu/release@file:../@peiyanlu/release/peiyanlu-release-0.0.4.tgz(conventional-commits-filter@5.0.0)':
     dependencies:
       '@clack/prompts': 0.11.0
       '@octokit/rest': 22.0.1
-      '@peiyanlu/cli-utils': 0.0.4
+      '@peiyanlu/cli-utils': 0.0.5
       '@peiyanlu/ts-utils': 0.0.4
       ansis: 4.2.0
       commander: 14.0.2
