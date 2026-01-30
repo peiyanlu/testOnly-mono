@@ -1,3 +1,9 @@
+## <small>[1.0.3](https://github.com/peiyanlu/testOnly-mono/compare/test-a@1.0.2...test-a@1.0.3) (2026-01-30)</small>
+
+### ✨ 新功能
+
+* add pkg a ([5b93877](https://github.com/peiyanlu/testOnly-mono/commit/5b9387757b7186b31a0989a2f5afbaff6529714e))
+
 ## <small>[1.0.2](https://github.com/peiyanlu/testOnly-mono/compare/test-a@1.0.0...test-a@1.0.2) (2026-01-30)</small>
 
 ### ✨ 新功能
