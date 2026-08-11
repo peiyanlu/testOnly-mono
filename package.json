@@ -10,7 +10,7 @@
   "type": "module",
   "private": true,
   "dependencies": {
-    "@peiyanlu/release": "file:E:/@peiyanlu/release/peiyanlu-release-0.0.4.tgz"
+    "@peiyanlu/release": "file:E:/@peiyanlu/release/peiyanlu-release-1.2.1.tgz"
   },
   "devDependencies": {
     "@types/node": "^25.0.10"
