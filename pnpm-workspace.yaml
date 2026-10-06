@@ -1,4 +1,7 @@
-neverBuiltDependencies: [ ]
+neverBuiltDependencies: []
+
+overrides:
+  '@peiyanlu/release': link:../../@peiyanlu/release
 
 packages:
   - 'packages/*'
