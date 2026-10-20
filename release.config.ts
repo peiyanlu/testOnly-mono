@@ -1,4 +1,4 @@
-import { defineConfig, PnpmWorkspacesProject, type UserConfig } from '@peiyanlu/release'
+import { defineConfig, GithubHosting, PnpmWorkspacesProject, type UserConfig } from '@peiyanlu/release'
 
 
 export default defineConfig({
@@ -8,4 +8,5 @@ export default defineConfig({
       return name.replace('mono-', '')
     },
   }),
+  hosting: new GithubHosting()
 } satisfies UserConfig)
