@@ -1,3 +1,7 @@
+## <small>[1.0.6](https://github.com/peiyanlu/testOnly-mono/compare/test-a%401.0.5...test-a%401.0.6) (2026-10-20)</small>
+
+Version bump without any changes.
+
 ## <small>[1.0.5](https://github.com/peiyanlu/testOnly-mono/compare/test-a%401.0.4...test-a%401.0.5) (2026-10-15)</small>
 
 Version bump without any changes.
