@@ -1,3 +1,9 @@
+## <small>[1.0.7](https://github.com/peiyanlu/testOnly-mono/compare/test-a%401.0.6...test-a%401.0.7) (2026-10-22)</small>
+
+### 📝 文档
+
+* add readme ([82353bd](https://github.com/peiyanlu/testOnly-mono/commit/82353bdbb823b47a54f0711e99a0e45d5c5f4af2))
+
 ## <small>[1.0.6](https://github.com/peiyanlu/testOnly-mono/compare/test-a%401.0.5...test-a%401.0.6) (2026-10-20)</small>
 
 Version bump without any changes.
