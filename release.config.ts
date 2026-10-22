@@ -13,9 +13,9 @@ export default defineConfig({
     extraScopes: [ 'deps' ],
   },
   publish: {
-    cleanup: true,
+    cleanPublish: true,
     ignoreFields: [],
     keepScripts: [],
-    readme: true,
+    cleanReadme: true,
   },
 })
