@@ -10,11 +10,10 @@ overrides:
 importers:
 
   .:
-    dependencies:
+    devDependencies:
       '@peiyanlu/release':
         specifier: link:../../@peiyanlu/release
         version: link:../../@peiyanlu/release
-    devDependencies:
       '@types/node':
         specifier: ^25.0.10
         version: 25.9.9
