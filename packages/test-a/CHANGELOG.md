@@ -1,3 +1,9 @@
+## [1.1.0](https://github.com/peiyanlu/testOnly-mono/compare/test-a%401.0.12...test-a%401.1.0) (2026-11-07)
+
+### ✨ 新功能
+
+* test release ([9210b70](https://github.com/peiyanlu/testOnly-mono/commit/9210b701d6e95efc59ac6fc3114271e1f4191a05))
+
 ## <small>[1.0.12](https://github.com/peiyanlu/testOnly-mono/compare/test-a%401.0.11...test-a%401.0.12) (2026-10-31)</small>
 
 Version bump without any changes.
