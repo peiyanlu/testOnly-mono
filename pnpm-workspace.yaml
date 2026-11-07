@@ -1,3 +1,6 @@
+minimumReleaseAgeExclude:
+  - "@peiyanlu/*"
+
 neverBuiltDependencies: []
 
 packages:
