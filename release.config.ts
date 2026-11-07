@@ -18,4 +18,7 @@ export default defineConfig({
     keepScripts: [],
     cleanReadme: true,
   },
+  releaser: {
+    verbose: true,
+  },
 })
