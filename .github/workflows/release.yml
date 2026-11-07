@@ -29,23 +29,9 @@ jobs:
           fetch-depth: 0
           fetch-tags: true
       
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v6
-        with:
-          version: 12
-      
-      - name: Setup Node.js
-        uses: actions/setup-node@v7
-        with:
-          node-version: 24
-          package-manager-cache: false
-      
-      - name: Install dependencies
-        run: pnpm install --frozen-lockfile
-      
       - name: Context check
         id: check
-        uses: peiyanlu/release@test
+        uses: peiyanlu/release@master
         with:
           workflow: check
           github-token: ${{ secrets.GITHUB_TOKEN }}
@@ -65,22 +51,8 @@ jobs:
           fetch-depth: 0
           fetch-tags: true
       
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v6
-        with:
-          version: 12
-      
-      - name: Setup Node.js
-        uses: actions/setup-node@v7
-        with:
-          node-version: 24
-          package-manager-cache: false
-      
-      - name: Install dependencies
-        run: pnpm install --frozen-lockfile
-      
       - name: Create or update pull request
-        uses: peiyanlu/release@test
+        uses: peiyanlu/release@master
         with:
           workflow: pull-request
           github-token: ${{ secrets.GITHUB_TOKEN }}
@@ -109,13 +81,14 @@ jobs:
         uses: actions/setup-node@v7
         with:
           node-version: 24
+          registry-url: https://registry.npmjs.org/
           package-manager-cache: false
       
       - name: Install deps
         run: pnpm install --frozen-lockfile
       
       - name: Release
-        uses: peiyanlu/release@test
+        uses: peiyanlu/release@master
         with:
           workflow: release
           github-token: ${{ secrets.GITHUB_TOKEN }}
@@ -143,13 +116,14 @@ jobs:
         uses: actions/setup-node@v7
         with:
           node-version: 24
+          registry-url: https://registry.npmjs.org/
           package-manager-cache: false
       
       - name: Install deps
         run: pnpm install --frozen-lockfile
       
       - name: Publish
-        uses: peiyanlu/release@test
+        uses: peiyanlu/release@master
         with:
           workflow: snapshot
           github-token: ${{ secrets.GITHUB_TOKEN }}
