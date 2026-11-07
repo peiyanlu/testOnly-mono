@@ -1,3 +1,9 @@
+## [1.2.0](https://github.com/peiyanlu/testOnly-mono/compare/test-b%401.0.12...test-b%401.2.0) (2026-11-07)
+
+### ✨ 新功能
+
+* test release ([621a7b8](https://github.com/peiyanlu/testOnly-mono/commit/621a7b89fa46ad336dab1e505e0c83e82ee20212))
+
 ## [1.1.0](https://github.com/peiyanlu/testOnly-mono/compare/test-b%401.0.12...test-b%401.1.0) (2026-11-07)
 
 ### ✨ 新功能
