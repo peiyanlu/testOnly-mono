@@ -11,6 +11,13 @@ export default defineConfig({
   hosting: new GithubHosting(),
   bump: {
     extraScopes: [ 'deps' ],
+    byProject: {
+      'mono-test-a': {
+        as: 'major',
+        prerelease: 'alpha'
+      },
+    },
+    // snapshot: 'snapshot',
   },
   publish: {
     cleanPublish: true,
