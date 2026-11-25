@@ -1,6 +1,6 @@
 import { log } from '@clack/prompts'
 import { styleText } from '@peiyanlu/node-utils'
-import { LoggerMessage } from '@peiyanlu/release'
+import type { LoggerMessage } from '@peiyanlu/release'
 import { inspect } from 'node:util'
 
 
