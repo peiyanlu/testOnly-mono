@@ -8,9 +8,12 @@ importers:
 
   .:
     devDependencies:
+      '@clack/prompts':
+        specifier: ^1.9.0
+        version: 1.9.0
       '@peiyanlu/release':
-        specifier: ^2.1.3
-        version: 2.1.3
+        specifier: ^2.3.0
+        version: 2.3.0
       '@types/node':
         specifier: ^24.13.3
         version: 24.19.2
@@ -39,12 +42,12 @@ packages:
   '@actions/io@3.0.2':
     resolution: {integrity: sha512-nRBchcMM+QK1pdjO7/idu86rbJI5YHUKCvKs0KxnSYbVe3F51UfGxuZX4Qy/fWlp6l7gWFwIkrOzN+oUK03kfw==}
 
-  '@clack/core@1.5.1':
-    resolution: {integrity: sha512-iHTrHA8MtVuLl2TfZySmcKv1qO2PoyC9Z7pfSDozEuV5vtY3/wcOPKJXlqJ5Oq2Cx5DDGQGAMVx6HZfRRoVEbQ==}
+  '@clack/core@1.6.0':
+    resolution: {integrity: sha512-4GZynIB2IIe431odxesswvWTCP6orvqd6e2b07b3VFWBQRqUqIHc/EPIZwFoKS692QBp+ooPuXKaJV8g4kXuYA==}
     engines: {node: '>= 20.12.0'}
 
-  '@clack/prompts@1.8.1':
-    resolution: {integrity: sha512-dlT1m5e/0yUL0kRNcQn7yGLVThkgbB0Ga/1AmfDDC/8ik6AIiSf2QLQO2zPYvefsHP0aFgxO93cVLCCfDp7kzQ==}
+  '@clack/prompts@1.9.0':
+    resolution: {integrity: sha512-tEj8X2No2A1c9NDnZECxiiJ8TP3vmFlN9tLlLeSaMqVW4tUmVG2R4qpv/eP4zymWxnymYLkLcIYVV0VcWj3RCQ==}
     engines: {node: '>= 20.12.0'}
 
   '@conventional-changelog/git-client@3.2.0':
@@ -59,9 +62,12 @@ packages:
       conventional-commits-parser:
         optional: true
 
-  '@conventional-changelog/template@1.4.0':
-    resolution: {integrity: sha512-aalGyl7dbB5PArRebDIX43ZvBlXrYm9uWzGJ26t+4SzJVPsOuvfILGGbw5X4yX7i50YEmJ8zvbiWnqH/AAnZqg==}
+  '@conventional-changelog/template@1.4.1':
+    resolution: {integrity: sha512-mHyyEL0eIEqJ6+aF24+AdZRo4bu4W5GdUiCiCx5X7kfDY51ye8GQJ264uOINObrRSKxtSRCOWPpl9hbOy4UzxQ==}
     engines: {node: '>=22'}
+
+  '@isaacs/nonrecursive-glob-match@1.1.0':
+    resolution: {integrity: sha512-GPm/Dbvk5RLmhRnxXIa7nTpK0xtl4E0wj0MslsuNiJ1FIROU+2+9lgUC/dgF7Ey4QCWhfEsgxilMRMCdHPfDfw==}
 
   '@octokit/auth-token@6.0.0':
     resolution: {integrity: sha512-P4YJBPdPSpWTQ1NU4XYdvHvXJJDxM6YwpS0FZHRgP7YFkdVxsWcpWGy/NVqlAA7PcPCnMacXlRm1y2PFZRWL/w==}
@@ -121,25 +127,38 @@ packages:
   '@octokit/types@18.0.0':
     resolution: {integrity: sha512-l6bAF43PNxkJp6g+W4PjoUSSkxHomXw2nOum5CTftJz1NlV3vu93NImgOYtLf6CbBUb5j+fiuzW0PPQ5JTSvZA==}
 
-  '@peiyanlu/cli-utils@0.0.15':
-    resolution: {integrity: sha512-ZgKvh1fe5y8qRylEQJbZ97v5cqV8HjCdrVmmwf1dnLh+RmH7RVa2eE9BeU+NalnPCNF+JenISuHfbyeMb7nZnw==}
-    engines: {node: '>=20'}
+  '@peiyanlu/cli-utils@1.1.1':
+    resolution: {integrity: sha512-ItoqlC8elHWffyXOANz/xrlfcrQDpcHb8f/YRzRiEA32L+Yo2/dV9EHrpjCNZOFzDZzuWeZ/2VQU6xmLgdZWlw==}
+    engines: {node: '>=22'}
+    peerDependencies:
+      '@clack/prompts': ^1.9.0
+    peerDependenciesMeta:
+      '@clack/prompts':
+        optional: true
 
-  '@peiyanlu/node-utils@0.0.4':
-    resolution: {integrity: sha512-C+qX7RdknEVL/4kj15KeRMmNDEVke89W+iARbgRXL1WkTk9GFxXVLNM9I4++ytGSwSaC6Od+GeGVpRPBz5TyyQ==}
+  '@peiyanlu/command-utils@0.1.0':
+    resolution: {integrity: sha512-8caoCHZmfl306pcC2689m/qhQpPjS+IP1PqYYC45T1C4NKfAGkS1/mnXy9X3bDdhhNfICD0/Y6mwKw0zhnpPyw==}
     engines: {node: '>=22'}
 
-  '@peiyanlu/release@2.1.3':
-    resolution: {integrity: sha512-j0TDMcvDBfPglQYHVwsK1jT1xyVbTKPddTRA6CSzceEQh+g11juER5GRif7DNdKHMdaI1vFFoe/dSWAboetvvg==}
+  '@peiyanlu/git-utils@0.1.0':
+    resolution: {integrity: sha512-i8AeDqTG5uU/CK/dxDqTuR4X7ns3iXyYQhrrADjslF8UDkfcZRTGqBytWEkqqnhxbN6No32Obz8RI7bX6076Dw==}
+    engines: {node: '>=22'}
+
+  '@peiyanlu/node-utils@0.1.1':
+    resolution: {integrity: sha512-0Qw60jl1HPbHaqiiIKIMVBufCzeRviMGyrI1pJ7u1kfWrvHcP+2PH1pQ9SSXNIie5/2dTwsyp0cQbwDEyZGjPA==}
+    engines: {node: '>=22'}
+
+  '@peiyanlu/node-utils@0.2.0':
+    resolution: {integrity: sha512-1lixOIxzio4ujjd2XQg2cehboeXENMjhXtNtdYyK32KiFtCL2Lhbb9laf+oplbO8qAv2ffW5n9kl0ZLK75/aHQ==}
+    engines: {node: '>=22'}
+
+  '@peiyanlu/release@2.3.0':
+    resolution: {integrity: sha512-Rp0rlLlYy0JWqeX5xPLBQu7WXDR0iyXQjuifR32yhZcRdquGw7SV+f8CXBN2RXawWZKf+nGw3DQFS4aEmld+PQ==}
     engines: {node: '>=22.18'}
     hasBin: true
 
-  '@peiyanlu/ts-utils@0.0.12':
-    resolution: {integrity: sha512-4J6KdTOcozak1q158GAQiV9FwtUdMPFmcGJfAkx+hS1oRl3k2hQDY4p0seLVhXWfJtPhcXbWvS7VE9uBIfWiTw==}
-    engines: {node: '>=20.0.0'}
-
-  '@peiyanlu/ts-utils@1.0.0':
-    resolution: {integrity: sha512-gRJyyG3868xGCG+qHG/oMGiQikPQkM5Guf71eBgEODfgDMohtmKWJcPOgm+z5cq1LvgMK1Btkm47NhwTPLW1BA==}
+  '@peiyanlu/ts-utils@1.1.0':
+    resolution: {integrity: sha512-cHX7omExoUWVLtfDSdstDxfa09SSIh9y30jiSaPuXPH9K29g9FeE0m6IX7otPCNTcdrUMSLYiNXCTDz7Ch4TyA==}
     engines: {node: '>=22'}
 
   '@publint/pack@0.1.7':
@@ -165,10 +184,6 @@ packages:
   '@types/node@24.19.2':
     resolution: {integrity: sha512-93d49wCWJkCyN87MxLpNN6KXPCwFw7bVUg79mGUV1OS40JGWwVCr8n61DXCSqz7CV6/VfPkb7xec7uP2M+QHWQ==}
 
-  ansis@4.4.0:
-    resolution: {integrity: sha512-9k3v7xcHwgdO/DruxGIg4HtjvlAZlcnsX/mzqUb1t3NkYnl9kK2UJ+Gq0io+vQf7iT//BD/HB/NBkUR1LWxoeA==}
-    engines: {node: '>=14'}
-
   argue-cli@3.2.0:
     resolution: {integrity: sha512-VipTB0gXgGIFO2Rg9yEVN5wLt2AurJcZqDbgmYSwPwsykhLrQhs240/bfceev4w68lI8JshoOJIk9uW7tFzROw==}
     engines: {node: '>=22'}
@@ -188,8 +203,8 @@ packages:
     resolution: {integrity: sha512-DdH81/zPLVS11EUgWq3tEu/xn+EzljlMYooDNdzWEnFha3R3NBMpMV1UqYIpjYHV/SgpFKMIX1Oh7o06SjM/oA==}
     engines: {node: '>=18'}
 
-  commander@15.0.0:
-    resolution: {integrity: sha512-z67u4ZhzCL/Tydu1lJARtEZYWbWaN7oYLHbsuzocr6y4N6WZAagG3RQ4FW61V1/0+jImpj293XfrcYnd1qxtPg==}
+  commander@15.1.0:
+    resolution: {integrity: sha512-cgnQ88TRrWcC7pVq46RzJVRMktu3W2RcbnoidnfBsl1bmDCBwJS/udcIZpKoCrbAYYaCqsz1yZCVIgbIaU3ddQ==}
     engines: {node: '>=22.12.0'}
 
   content-type@3.1.1:
@@ -223,8 +238,13 @@ packages:
     engines: {node: '>=22'}
     hasBin: true
 
-  conventional-recommended-bump@12.1.0:
-    resolution: {integrity: sha512-HTNG3kEZXOOfKwrEx54ljURU9bG4nVPQzXMyCSeUcA/PE8EpNpQNujSrbXNBI8QZyN35zM+pVw+FuQk4KqHSHg==}
+  conventional-commits-parser@7.1.4:
+    resolution: {integrity: sha512-TW3PZHi6hwF4cyu7KKc4kNqD1cgg8AkkK5ge9+zsEfpjaSXOeeIQyNWBr7kx5hR2wFuKVmr0be37RzcpmACQIA==}
+    engines: {node: '>=22'}
+    hasBin: true
+
+  conventional-recommended-bump@12.1.1:
+    resolution: {integrity: sha512-73tca4vG9rlrB/+DkjtJPVaSJRpValcqI5obhAEcepaKC4MLcubxWJCS9lf12F8hFMuAyX1Ji1AGYIisGroqAw==}
     engines: {node: '>=22'}
     hasBin: true
 
@@ -291,6 +311,10 @@ packages:
     resolution: {integrity: sha512-vpLQEs+VLCr1nU0BXS07maYoFwlDAH0gngQuuttxIwutDFEMHq2blX+8vpgxDdK3J1PwjCJiep77OitTZ4Ll1A==}
     engines: {node: 18 || 20 || >=22}
 
+  minimatch@11.0.9:
+    resolution: {integrity: sha512-KCFkfyjqerNlSstjlhIGNXIKZGA/6O4V4RlhZ+Dsr621SPPw0mzlypE9D9ZOoPiVefHID+j7/XuMMlqfD/F60Q==}
+    engines: {node: 20 || >=22}
+
   minimist@1.2.8:
     resolution: {integrity: sha512-2yyAR8qBkN3YuheJanUpWC5U3bb5osDywNB8RzDVlDwDHbocAJveqqj1u8+SVD7jkWT4yvsHCpWqqWqAxb0zCA==}
 
@@ -332,13 +356,14 @@ packages:
     resolution: {integrity: sha512-xal3CZX1Xlo/k4ApwCFrHVACi9fBqJ7V+mwhBsuf/1IOKbBy098Fex+Wa/5QMubw09pSZ/u8EY8PWgevJsXp1A==}
     engines: {node: '>=6'}
 
-  semver@7.8.5:
-    resolution: {integrity: sha512-Y7/KDsb8LjooZpwaqGyulO6DQlksgCncchHGk+sZIY4SBvUocMBEFH5Ur1fI4dV+Jvl0w6cjvucaIi40puRioA==}
+  semver@7.8.6:
+    resolution: {integrity: sha512-9lpSSU4Mly3mrtruwLs1eLK6+gzbzqeBFwRNjIjE+9LuDpWdYctrQlQ3ej1Ilgi7gknpsTRnPoLP8DpCHqHIJw==}
     engines: {node: '>=10'}
     hasBin: true
 
-  sisteransi@1.0.5:
-    resolution: {integrity: sha512-bLGGlR1QxBcynn2d5YmDX4MGjlZvy2MRBDRNHLJ8VI6l6+9FUiyTFNJ0IveOSP0bcXgVDPRcfGqA0pjaqUpfVg==}
+  sisteransi@2.0.0:
+    resolution: {integrity: sha512-2WCqLdt12eN6ehLI50S2/ZxoowXU3DD1KVPRyVP0WEsFahrGZZmCdq1K59qjJljMRIDTwx1D9YaRK+hDneBUMg==}
+    engines: {node: '>=20'}
 
   source-map@0.6.1:
     resolution: {integrity: sha512-UjgapumWlbMhkBgzT7Ykc5YXUT46F0iKu8SGXq0bcwP5dz/h0Plj6enJqjz1Zbq2l5WaqYnrVbwWOWMyF3F47g==}
@@ -424,17 +449,18 @@ snapshots:
 
   '@actions/io@3.0.2': {}
 
-  '@clack/core@1.5.1':
+  '@clack/core@1.6.0':
     dependencies:
-      fast-wrap-ansi: 0.2.2
-      sisteransi: 1.0.5
-
-  '@clack/prompts@1.8.1':
-    dependencies:
-      '@clack/core': 1.5.1
       fast-string-width: 3.0.2
       fast-wrap-ansi: 0.2.2
-      sisteransi: 1.0.5
+      sisteransi: 2.0.0
+
+  '@clack/prompts@1.9.0':
+    dependencies:
+      '@clack/core': 1.6.0
+      fast-string-width: 3.0.2
+      fast-wrap-ansi: 0.2.2
+      sisteransi: 2.0.0
 
   '@conventional-changelog/git-client@3.2.0(conventional-commits-filter@6.0.1)(conventional-commits-parser@7.1.3)':
     dependencies:
@@ -445,7 +471,18 @@ snapshots:
       conventional-commits-filter: 6.0.1
       conventional-commits-parser: 7.1.3
 
-  '@conventional-changelog/template@1.4.0': {}
+  '@conventional-changelog/git-client@3.2.0(conventional-commits-filter@6.0.1)(conventional-commits-parser@7.1.4)':
+    dependencies:
+      '@simple-libs/child-process-utils': 2.0.0
+      '@simple-libs/stream-utils': 2.0.0
+      verkit: 0.5.0
+    optionalDependencies:
+      conventional-commits-filter: 6.0.1
+      conventional-commits-parser: 7.1.4
+
+  '@conventional-changelog/template@1.4.1': {}
+
+  '@isaacs/nonrecursive-glob-match@1.1.0': {}
 
   '@octokit/auth-token@6.0.0': {}
 
@@ -516,43 +553,62 @@ snapshots:
     dependencies:
       '@octokit/openapi-types': 29.0.1
 
-  '@peiyanlu/cli-utils@0.0.15':
+  '@peiyanlu/cli-utils@1.1.1(@clack/prompts@1.9.0)':
     dependencies:
-      '@peiyanlu/ts-utils': 1.0.0
-      ansis: 4.4.0
-      semver: 7.8.5
+      '@peiyanlu/command-utils': 0.1.0
+      '@peiyanlu/node-utils': 0.2.0
+      '@peiyanlu/ts-utils': 1.1.0
+      semver: 7.8.6
+    optionalDependencies:
+      '@clack/prompts': 1.9.0
 
-  '@peiyanlu/node-utils@0.0.4':
+  '@peiyanlu/command-utils@0.1.0':
     dependencies:
-      '@peiyanlu/ts-utils': 1.0.0
+      '@peiyanlu/node-utils': 0.1.1
+      '@peiyanlu/ts-utils': 1.1.0
+
+  '@peiyanlu/git-utils@0.1.0':
+    dependencies:
+      '@peiyanlu/command-utils': 0.1.0
+      '@peiyanlu/node-utils': 0.1.1
+      '@peiyanlu/ts-utils': 1.1.0
+
+  '@peiyanlu/node-utils@0.1.1':
+    dependencies:
+      '@peiyanlu/ts-utils': 1.1.0
       minimatch: 10.2.6
       tinyglobby: 0.2.17
 
-  '@peiyanlu/release@2.1.3':
+  '@peiyanlu/node-utils@0.2.0':
+    dependencies:
+      '@peiyanlu/ts-utils': 1.1.0
+      minimatch: 11.0.9
+      tinyglobby: 0.2.17
+
+  '@peiyanlu/release@2.3.0':
     dependencies:
       '@actions/core': 3.0.1
       '@actions/github': 9.1.1
-      '@clack/prompts': 1.8.1
-      '@conventional-changelog/template': 1.4.0
+      '@clack/prompts': 1.9.0
+      '@conventional-changelog/template': 1.4.1
       '@octokit/rest': 22.0.1
-      '@peiyanlu/cli-utils': 0.0.15
-      '@peiyanlu/node-utils': 0.0.4
-      '@peiyanlu/ts-utils': 0.0.12
-      ansis: 4.4.0
-      commander: 15.0.0
+      '@peiyanlu/cli-utils': 1.1.1(@clack/prompts@1.9.0)
+      '@peiyanlu/command-utils': 0.1.0
+      '@peiyanlu/git-utils': 0.1.0
+      '@peiyanlu/node-utils': 0.2.0
+      '@peiyanlu/ts-utils': 1.1.0
+      commander: 15.1.0
       conventional-changelog: 8.1.3
       conventional-changelog-conventionalcommits: 10.4.1
-      conventional-recommended-bump: 12.1.0
+      conventional-recommended-bump: 12.1.1
       handlebars: 4.7.10
       open: 11.0.4
       publint: 0.3.25
-      semver: 7.8.5
+      semver: 7.8.6
       tinyglobby: 0.2.17
       yaml: 2.9.1
 
-  '@peiyanlu/ts-utils@0.0.12': {}
-
-  '@peiyanlu/ts-utils@1.0.0': {}
+  '@peiyanlu/ts-utils@1.1.0': {}
 
   '@publint/pack@0.1.7':
     dependencies:
@@ -567,15 +623,13 @@ snapshots:
   '@simple-libs/normalize-package-data@1.0.0':
     dependencies:
       '@simple-libs/hosted-git-info': 2.0.0
-      semver: 7.8.5
+      semver: 7.8.6
 
   '@simple-libs/stream-utils@2.0.0': {}
 
   '@types/node@24.19.2':
     dependencies:
       undici-types: 7.24.6
-
-  ansis@4.4.0: {}
 
   argue-cli@3.2.0: {}
 
@@ -591,19 +645,19 @@ snapshots:
     dependencies:
       run-applescript: 7.1.0
 
-  commander@15.0.0: {}
+  commander@15.1.0: {}
 
   content-type@3.1.1: {}
 
   conventional-changelog-conventionalcommits@10.4.1:
     dependencies:
-      '@conventional-changelog/template': 1.4.0
+      '@conventional-changelog/template': 1.4.1
 
   conventional-changelog-preset-loader@6.0.1: {}
 
   conventional-changelog-writer@9.3.0:
     dependencies:
-      '@conventional-changelog/template': 1.4.0
+      '@conventional-changelog/template': 1.4.1
       '@simple-libs/stream-utils': 2.0.0
       argue-cli: 3.2.0
       conventional-commits-filter: 6.0.1
@@ -628,13 +682,18 @@ snapshots:
       '@simple-libs/stream-utils': 2.0.0
       argue-cli: 3.2.0
 
-  conventional-recommended-bump@12.1.0:
+  conventional-commits-parser@7.1.4:
     dependencies:
-      '@conventional-changelog/git-client': 3.2.0(conventional-commits-filter@6.0.1)(conventional-commits-parser@7.1.3)
+      '@simple-libs/stream-utils': 2.0.0
+      argue-cli: 3.2.0
+
+  conventional-recommended-bump@12.1.1:
+    dependencies:
+      '@conventional-changelog/git-client': 3.2.0(conventional-commits-filter@6.0.1)(conventional-commits-parser@7.1.4)
       argue-cli: 3.2.0
       conventional-changelog-preset-loader: 6.0.1
       conventional-commits-filter: 6.0.1
-      conventional-commits-parser: 7.1.3
+      conventional-commits-parser: 7.1.4
 
   default-browser-id@5.0.1: {}
 
@@ -690,6 +749,11 @@ snapshots:
     dependencies:
       brace-expansion: 5.0.12
 
+  minimatch@11.0.9:
+    dependencies:
+      '@isaacs/nonrecursive-glob-match': 1.1.0
+      brace-expansion: 5.0.12
+
   minimist@1.2.8: {}
 
   mri@1.2.0: {}
@@ -726,9 +790,9 @@ snapshots:
     dependencies:
       mri: 1.2.0
 
-  semver@7.8.5: {}
+  semver@7.8.6: {}
 
-  sisteransi@1.0.5: {}
+  sisteransi@2.0.0: {}
 
   source-map@0.6.1: {}
 

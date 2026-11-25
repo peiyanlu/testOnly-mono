@@ -11,7 +11,8 @@
     "declaration": true,
     "removeComments": false,
     "emitDeclarationOnly": false,
-    "stripInternal": false
+    "stripInternal": false,
+    "types": ["node"]
   },
   "include": ["src", "release.config.ts"]
 }
