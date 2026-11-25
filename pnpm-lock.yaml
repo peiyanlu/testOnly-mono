@@ -11,6 +11,9 @@ importers:
       '@clack/prompts':
         specifier: ^1.9.0
         version: 1.9.0
+      '@peiyanlu/node-utils':
+        specifier: ^0.2.0
+        version: 0.2.0
       '@peiyanlu/release':
         specifier: ^2.3.0
         version: 2.3.0

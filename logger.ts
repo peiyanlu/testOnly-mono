@@ -1,4 +1,6 @@
 import { log } from '@clack/prompts'
+import { styleText } from '@peiyanlu/node-utils'
+import { LoggerMessage } from '@peiyanlu/release'
 import { inspect } from 'node:util'
 
 
@@ -40,3 +42,13 @@ console.log('===================================================================
 
 console.log(inspect(test))
 console.log(inspect(a))
+
+console.log('================================================================================================')
+
+
+const defaultPrinter = ({ dryRun, stage, message, color }: LoggerMessage) => {
+  console.log(`${ dryRun ? styleText.yellow`[dry-run]` : '' }${ color(`[${ stage }]`) }:`, message)
+}
+
+defaultPrinter({ message: test, color: styleText.red, stage: 'aaa' })
+defaultPrinter({ message: a, color: styleText.red, stage: 'aaa' })
