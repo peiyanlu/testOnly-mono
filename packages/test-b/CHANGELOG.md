@@ -1,3 +1,9 @@
+## <small>[1.1.1](https://github.com/peiyanlu/testOnly-mono/compare/test-b%401.1.0...test-b%401.1.1) (2026-11-25)</small>
+
+### 🐛 Bug 修复
+
+* commit cli test ([800e300](https://github.com/peiyanlu/testOnly-mono/commit/800e3005951d24e603b8556c3b37cb07e3f0d56d))
+
 ## [1.1.0](https://github.com/peiyanlu/testOnly-mono/compare/test-b%401.0.12...test-b%401.1.0) (2026-11-07)
 
 ### ✨ 新功能
