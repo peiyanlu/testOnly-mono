@@ -35,4 +35,4 @@ jobs:
       - name: Install deps
         run: pnpm install --frozen-lockfile
       
-      - run: node .\logger.ts
+      - run: node logger.ts
